@@ -329,7 +329,6 @@ namespace alarm
                 }
             }
         }
-
         public static int GenerateUniqueId()
         {
             Guid guid = Guid.NewGuid();
