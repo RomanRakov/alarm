@@ -19,7 +19,6 @@ namespace alarm
         private static string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
         private static string databasePath = currentDirectory + "DataBaseAlarms.mdf";
         private static string connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={databasePath};Integrated Security=True";
-
         private void LoadAlarmsFromDatabase()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
